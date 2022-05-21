@@ -10,7 +10,6 @@ const Brick = ({as,cssModule, variant='default', className, children, ...props})
 
 export default Brick
 
-
 const getStylesFromCssModule = (obj, arr) => arr.split(' ').map(i => {
     
     if (obj && obj[i]) return obj[i]
