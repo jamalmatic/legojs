@@ -29,7 +29,7 @@ Brick
 ```jsx
 // Alert.js
 import React from 'react'
-import Brick from 'lego-components'
+import Brick from 'legojs'
 import Styles from './Alert.module.css' 
 
 const Alert = ({as='div', ...props}) => {
