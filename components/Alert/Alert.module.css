@@ -1,0 +1,26 @@
+.common {
+    @apply w-full rounded-md px-5 py-4;
+}
+
+.normal {
+    @apply common bg-gray-300;
+}
+
+.info {
+    @apply common bg-blue-400;
+}
+
+.success {
+    @apply common bg-green-300;
+}
+
+.warning {
+    @apply common bg-orange-400;
+}
+
+.danger {
+    @apply common bg-red-600;
+}
+.default {
+    @apply normal;
+}
