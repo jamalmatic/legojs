@@ -1,0 +1,25 @@
+/* Button.module.css */
+.common {
+    @apply inline-flex items-center justify-center;
+    @apply px-3 py-2 rounded-md w-32 min-w-max cursor-pointer;
+    @apply font-medium uppercase;
+    @apply hover:bg-opacity-80;
+}
+
+.default {
+    @apply common bg-neutral text-neutral-contrast;
+    
+}
+
+.primary {
+    @apply common bg-primary text-primary-contrast;
+    
+}
+
+.secondary {
+    @apply common bg-secondary text-secondary-contrast;
+}
+
+.with-icon {
+    @apply common justify-between space-x-4;
+}
