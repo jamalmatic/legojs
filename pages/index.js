@@ -8,7 +8,8 @@ export default function Home() {
       <Alert variant="info"/>
       <Alert variant="success"/>
       <Alert variant="warning"/>
-      <Alert variant="danger"/>
+      <Alert variant="error"/>
+      <Alert variant="primary"/>
     </div>
   )
 }
