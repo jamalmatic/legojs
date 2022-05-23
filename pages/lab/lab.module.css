@@ -1,25 +1,33 @@
-/* Button.module.css */
+/* Carousel.module.css */
 .common {
-    @apply inline-flex items-center justify-center;
-    @apply px-3 py-2 rounded-md w-32 min-w-max cursor-pointer;
-    @apply font-medium uppercase;
-    @apply hover:bg-opacity-80;
+    @apply inline-flex items-center justify-center transition duration-200 ease-in-out;
+    @apply px-2 h-5 text-sm leading-5 rounded-xl;
+    
+    
+    
+  }
+
+.outline {
+    @apply common border-2;
 }
 
 .default {
     @apply common bg-neutral text-neutral-contrast;
-    
-}
+    &-outline {
+         @apply outline border-neutral text-neutral;
+    }
+ }
+
+
 
 .primary {
     @apply common bg-primary text-primary-contrast;
+    &-outline {
+        @apply outline border-primary text-primary;
+   }
     
 }
 
 .secondary {
     @apply common bg-secondary text-secondary-contrast;
-}
-
-.with-icon {
-    @apply common justify-between space-x-4;
 }

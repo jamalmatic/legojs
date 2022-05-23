@@ -13,7 +13,7 @@ export default Brick
 const getStylesFromCssModule = (obj, arr) => arr.split(' ').map(i => {
     
     if (obj && obj[i]) return obj[i]
-    if (obj && !obj[i]) return obj.default
+    if (obj && !obj[i] && obj.default) return obj.default
     
     
   })

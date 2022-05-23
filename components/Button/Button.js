@@ -4,7 +4,7 @@ import Brick from 'legojs'
 
 const Button = ({...props}) => {
   return (
-    <Brick as={props.as || 'div'} cssModule={Styles} {...props}>
+    <Brick as={props.as || 'button'} cssModule={Styles} {...props}>
       {props.children || 'button'}
     </Brick>
   )

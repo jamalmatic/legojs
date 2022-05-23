@@ -1,16 +1,14 @@
 import React from 'react'
 import Styles from './lab.module.css'
-import Brick from 'legojs'
-
+import {Brick}  from  '@lego-js/base'
 const lab = () => {
   return (
-    <div className='uppercase'>
-      <Button >default</Button>
-      <Button variant='primary' >primary</Button>
-      <Button variant='secondary' >secondary</Button>
-      <Button variant='secondary with-icon'>
-        <span>secondari</span>
-      </Button>
+    <div className=''>
+      <Badge variant='default' />
+      <Badge variant='default-outline' />
+      <Badge variant='primary' />
+      <Badge variant='primary-outline' />
+      <Badge variant='secondary' />
     </div>
     
 
@@ -19,10 +17,10 @@ const lab = () => {
 
 export default lab
 
-const Button = ({...props}) => {
+const Badge = ({...props}) => {
   return (
     <Brick as={props.as || 'div'} cssModule={Styles} {...props}>
-      {props.children || 'button'}
+      {props.children || 'Badge'}
     </Brick>
   )
 }
