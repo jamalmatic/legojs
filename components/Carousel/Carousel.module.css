@@ -1,0 +1,32 @@
+/* Carousel.module.css */
+.common {
+    @apply flex snap-mandatory scroll-smooth;
+    
+    
+    & *[carousel-item] {
+      @apply box-content flex-none;
+      @apply snap-start;
+
+    }
+    
+  }
+
+.default {
+    @apply common snap-x overflow-x-scroll;
+ }
+
+.horizontal {
+     @apply default;
+ }
+
+.vertical {
+    @apply common snap-y flex-col overflow-y-scroll;
+}
+
+.center *[carousel-item] {
+    @apply snap-center;
+}
+
+.end *[carousel-item] {
+    @apply snap-end;
+}
