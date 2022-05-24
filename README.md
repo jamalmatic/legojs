@@ -22,19 +22,21 @@ Inspired by modern technologies and new methods in terms of fullstack developmen
 
 ## Lego components
 
-Brick
+import { Brick } from '@lego-js/base';
 
 ## Brick Component Usage Example
 
 ```jsx
 // Alert.js
 import React from 'react'
-import Brick from 'legojs'
+import { Brick } from '@lego-js/base'
 import Styles from './Alert.module.css' 
 
 const Alert = ({as='div', ...props}) => {
   return (
-    <Brick as={as} cssModule={Styles} variant={props.variant} {...props}>{props.children || 'Alert'}</Brick>
+    <Brick as={as} cssModule={Styles} variant={props.variant} {...props}>
+        {props.children || 'Alert'}
+    </Brick>
   )
 }
 
