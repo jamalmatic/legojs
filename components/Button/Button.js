@@ -1,6 +1,6 @@
 import React from 'react'
 import Styles from './Button.module.css'
-import Brick from '@lego-js/base'
+import {Brick} from '@lego-js/base'
 
 const Button = ({...props}) => {
   return (
