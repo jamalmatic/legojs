@@ -1,24 +1,29 @@
 /* common class */
 .common {
     @apply w-full rounded-md px-5 py-4;
+    @apply hover:bg-opacity-90;
     }
 
 .default {
-    @apply common bg-gray-300;
+    @apply common bg-neutral text-neutral-contrast;
 }
 
 .info {
-    @apply common bg-blue-400;
+    @apply common bg-info;
 }
 
 .success {
-    @apply common bg-green-300;
+    @apply common bg-success;
 }
 
 .warning {
-    @apply common bg-orange-400;
+    @apply common bg-warning;
 }
 
-.danger {
-    @apply common bg-red-600;
+.error {
+    @apply common bg-error text-error-contrast;
+}
+
+.primary {
+    @apply common bg-primary text-primary-contrast;
 }

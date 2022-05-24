@@ -1,0 +1,30 @@
+.common {
+    @apply flex flex-nowrap;
+    * {
+        @apply rounded-none;
+    }
+}
+
+.default {
+    @apply common;
+    :first-child {
+        @apply rounded-l-md border-r-white;
+    }
+    :last-child {
+        @apply rounded-r-md border-l-white;
+    }
+}
+
+.vertical {
+    @apply flex flex-col min-w-max;
+    @apply common;
+    * {
+        @apply min-w-full;
+    }
+    :first-child {
+        @apply rounded-t-md border-b-white;
+    }
+    :last-child {
+        @apply rounded-b-md border-t-white;
+    }
+}
