@@ -1,25 +1,57 @@
 /* Button.module.css */
 .common {
     @apply inline-flex items-center justify-center;
-    @apply px-3 py-2 rounded-md w-32 min-w-max cursor-pointer;
+    @apply px-3 py-2 rounded-md max-w-max cursor-pointer;
     @apply font-medium uppercase;
-    @apply hover:bg-opacity-80;
+    @apply hover:bg-transparent;
+    @apply border-2;
+    &-outline {
+        @apply common bg-transparent;
+    }
+    
 }
 
 .default {
-    @apply common bg-neutral text-neutral-contrast;
-    
+    @apply common bg-neutral border-neutral text-neutral-contrast;
+    @apply hover:text-neutral;
+    &.outline {
+        @apply common-outline border-neutral text-neutral;
+        &:hover {
+            @apply bg-neutral text-neutral-contrast;
+        }
+    }
 }
 
 .primary {
-    @apply common bg-primary text-primary-contrast;
-    
+    @apply common bg-primary border-primary text-primary-contrast;
+    @apply hover:text-primary;
+    &.outline {
+        @apply common-outline border-primary text-primary;
+        &:hover {
+            @apply bg-primary text-primary-contrast;
+        }
+    }   
 }
 
 .secondary {
-    @apply common bg-secondary text-secondary-contrast;
+    @apply common bg-secondary border-secondary text-secondary-contrast;
+    @apply hover:text-secondary;
+    &.outline {
+        @apply common-outline border-secondary text-secondary;
+        &:hover {
+            @apply bg-secondary text-secondary-contrast;
+        }
+    }
 }
 
-.with-icon {
-    @apply common justify-between space-x-4;
+.small {
+    @apply text-xs;
+}
+
+.medium {
+    @apply text-base;
+}
+
+.large {
+    @apply text-xl;
 }
