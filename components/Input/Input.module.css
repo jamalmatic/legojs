@@ -1,0 +1,28 @@
+.common {
+    @apply w-full border p-4 text-neutral bg-gray-50 rounded-md;
+    @apply focus:outline-none;
+    &:disabled {
+        @apply bg-neutral-light;
+    }
+    &:focus {
+        @apply outline outline-offset-1;
+    }
+    
+}
+
+.default {
+    @apply common;
+    &:focus {
+        @apply border-primary-light outline-primary-light;
+    }
+}
+
+.error {
+    @apply common;
+    @apply border-error focus:outline-error;
+    
+}
+
+.success {
+    @apply common border-success focus:outline-success;
+}
